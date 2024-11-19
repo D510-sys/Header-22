@@ -19,9 +19,11 @@ body{
 }
 .section-right, .section-left{
     display: flex;
-    width: 100%;
+    width: 1071px;
+    
     gap: 20px;
     padding-top: 30px;
+    
 }
 .section-left{
     padding-left: 65px;
@@ -41,6 +43,7 @@ body{
 }
 .nav2{
     display: flex;
+    gap: 20px;
     padding-left: 325px;
 }
 .section-right i{
@@ -49,7 +52,7 @@ body{
 
 .btn{
     font-size: 1rem;
-    padding: 0.6rem;
+    padding: 15px;
     border-radius: 6.25rem;
     background-color: inherit;
     color: #ffffff;
@@ -124,3 +127,25 @@ main i{
     padding-bottom: 10px;
 }
 
+
+@media(max-width: 600px){
+    body{
+        width: 100%;
+    }
+    .initial{
+        /*width: 40%;*/
+        padding: 10px;
+    }
+   .nav1, .nav2{
+    display: none;
+    
+   }
+   main{
+    padding-left: 0px;
+   }
+    main h2{
+        width: 20%;
+        font-size: 30px;
+        padding: auto;
+    }
+}
